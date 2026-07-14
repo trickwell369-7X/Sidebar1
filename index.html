@@ -3,12 +3,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Test</title>
+  
+<style>
+
+body{
+    background:#111;
+
+font-family:Arial,sans-serif;
+
+margin:0;
+
+padding: 0px;
+}
+
+/* ---------- CARD ---------- */
+  
+.main {
+background:rgba(150,0,150,.20);
+border-radius:40px;
+border:1px solid #789c52;
+padding:15px;
+margin:15px 0;
+}
+
+.link {
+
+text-decoration:none;
+
+color:inherit;
+
+display:block;
+
+}
+  
+.sun1{
+
+    position:relative;
+
+
+    background:rgba(200,200,30,0.40);
+
+    border:2px solid #d8b45b;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    overflow:hidden;
+
+    box-shadow:0 0 20px rgba(255,220,120,.4);
+
+}
+
+/* ---------- STARS ---------- */
+
+.star{
+
+    position:absolute;
+
+    color:#fff8b0;
+
+    font-size:20px;
+
+    animation:twinkle 2s infinite ease-in-out;
+
+}
+
+/* Locations */
+
+.s1{
+top:12px;
+left:18px;
+animation-delay:0s;
+}
+
+.s2{
+top:18px;
+right:20px;
+animation-delay:.5s;
+}
+
+.s3{
+bottom:18px;
+left:30px;
+animation-delay:1s;
+}
+
+.s4{
+bottom:12px;
+right:18px;
+animation-delay:1.5s;
+}
+
+.s5{
+top:50%;
+left:8px;
+animation-delay:.8s;
+}
+
+.s6{
+top:50%;
+right:8px;
+animation-delay:1.2s;
+}
+
+/* ---------- ANIMATION ---------- */
+
+@keyframes twinkle{
+
+0%{
+
+opacity:.2;
+
+transform:scale(.5) rotate(0deg);
+
+text-shadow:0 0 0px gold;
+
+}
+
+50%{
+
+opacity:1;
+
+transform:scale(1.7) rotate(180deg);
+
+text-shadow:
+0 0 6px gold,
+0 0 12px yellow,
+0 0 18px white;
+
+}
+
+100%{
+
+opacity:.2;
+
+transform:scale(.5) rotate(360deg);
+
+text-shadow:0 0 0px gold;
+
+}
+
+}
+
+</style>
+
 </head>
 
-<body style="background:#111;color:white;font-size:40px">
+<body>
 
-HELLO WORLD
+<div class="main">
+  <center>
+  <a href="https://www.chess.com/tournament/live/fiendish-sunday-thrill-1-6617671?" class="link"> 
+ <div class="sun1">
+  <span class="star s1">✦</span>
+<span class="star s2">✦</span>
+<span class="star s3">✦</span>
+<span class="star s4">✦</span>
+<span class="star s5">✦</span>
+<span class="star s6">✦</span>
+  
+FIENDISH<br>
+  SUNDAY THRILL
+ </div>
+    </a>
+    <div class="coremembers">
+        
+    
+<h3 style="color:#d8b45b;">CORE MEMBERS</h3>
 
+<table>
+
+<tr>
+
+<td align="center">
+<a href="https://www.chess.com/member/player1">
+<img src="IMG1" width="80" style="border-radius:50%;">
+<br>
+Player1
+</a>
+</td>
+
+<td align="center">
+<a href="https://www.chess.com/member/player2">
+<img src="IMG2" width="80" style="border-radius:50%;">
+<br>
+Player2
+</a>
+</td>
+
+</tr>
+
+</table>
+ </div>
+</center>
+</div> 
 </body>
 </html>
